@@ -9,11 +9,12 @@
 # Triângulo Isósceles: quaisquer dois lados iguais;
 # Triângulo Escaleno: três lados diferentes;
 
+
 def tipo_triangulo(lista):
     if (int(lista[0]) + int(lista[1])) > int(lista[2]):
         if lista[0] == lista[1] == lista[2]:
             return "Esse é um triangulo Equilátero"
-        if lista[0]==lista[1] or lista[0]==lista[2] or lista[1]==lista[2]:
+        if lista[0] == lista[1] or lista[0] == lista[2] or lista[1] == lista[2]:
             return "Esse é um triangulo Isóceles"
         return "Esse é um triangulo Escaleno"
     else:
