@@ -3,9 +3,26 @@
 # recursiva.
 
 
-def MDC(a, b):
-    while b != 0:
+# def MDC(a, b):
+#    while b != 0:
+#        r = a % b
+#        a = b
+#        b = r
+#    return a
+
+
+def MDCrecursive(a, b):
+    if b <= 0:
+        return a
+    else:
         r = a % b
         a = b
         b = r
-    return a
+        return MDCrecursive(a, b)
+
+
+# Testes
+print(MDCrecursive(5, 10))
+print(MDCrecursive(10, 0))
+print(MDCrecursive(10, 10))
+print(MDCrecursive(13, 24))
