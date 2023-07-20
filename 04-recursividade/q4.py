@@ -6,7 +6,7 @@ def printto(n):
     if n == 0:
         return 0
     else:
-        return str(n) + " " + str(printto(n - 1))
+        return str(printto(n - 1)) + " " + str(n)
 
 
 print(printto(int(input())))

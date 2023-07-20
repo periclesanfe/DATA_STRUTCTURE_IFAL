@@ -4,10 +4,9 @@
 
 def printto(n):
     if n == 0:
-        print(n)
+        return 0
     else:
-        str(printto(n - 1))
-        print(n)
+        return str(n) + " " + str(printto(n - 1))
 
 
-printto(int(input()))
+print(printto(int(input())))

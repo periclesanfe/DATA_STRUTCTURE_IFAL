@@ -3,6 +3,7 @@ def inv(palavra):
         print(palavra)
         return palavra
     else:
-        return inv(palavra[1:])+palavra[0]
+        return inv(palavra[1:]) + palavra[0]
 
-print(inv('python'))
+
+print(inv("python"))
