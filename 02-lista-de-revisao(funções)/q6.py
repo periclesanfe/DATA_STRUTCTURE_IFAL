@@ -6,6 +6,7 @@ def maior_de_3(num1, num2, num3):
 
 
 #testes
+print(maior_de_3(int(input()), int(input()), int(input())))
 print(maior_de_3(1,2,3))
 print(maior_de_3(10,2,3))
 print(maior_de_3(0,0,0))
